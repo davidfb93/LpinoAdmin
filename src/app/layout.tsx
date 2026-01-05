@@ -1,22 +1,14 @@
 
 import { Metadata, Viewport } from "next";
-import { Link } from "@heroui/link";
-import clsx from "clsx";
 
 import { Providers } from "./providers";
+import "@/styles/globals.css";
 
-import { siteConfig } from "@/src/config/site";
-import { fontSans } from "@/src/config/fonts";
+
 
 export const metadata: Metadata = {
-  title: {
-    default: siteConfig.name,
-    template: `%s - ${siteConfig.name}`,
-  },
-  description: siteConfig.description,
-  icons: {
-    icon: "/favicon.ico",
-  },
+  title: "Lpino Admin",
+  description: "Admin Panel for Lpino",
 };
 
 export const viewport: Viewport = {
