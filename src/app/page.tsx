@@ -68,7 +68,7 @@ export default function Home() {
                   <div className="ml-5 w-0 flex-1">
                     <dl>
                       <dt className="text-sm font-medium text-gray-500 truncate">Usuarios</dt>
-                      <dd className="text-lg font-medium text-gray-900">1,234</dd>
+                      <dd className="text-lg font-medium text-gray-900">34</dd>
                     </dl>
                   </div>
                 </div>
@@ -85,7 +85,7 @@ export default function Home() {
                   </div>
                   <div className="ml-5 w-0 flex-1">
                     <dl>
-                      <dt className="text-sm font-medium text-gray-500 truncate">Proyectos</dt>
+                      <dt className="text-sm font-medium text-gray-500 truncate">Vistas mensuales</dt>
                       <dd className="text-lg font-medium text-gray-900">42</dd>
                     </dl>
                   </div>
@@ -126,24 +126,6 @@ export default function Home() {
                     </dl>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-
-          {/* Quick Actions */}
-          <div className="bg-white shadow rounded-lg">
-            <div className="px-4 py-5 sm:p-6">
-              <h3 className="text-lg leading-6 font-medium text-gray-900 mb-4">Acciones Rápidas</h3>
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                <button className="bg-emerald-50 hover:bg-emerald-100 text-emerald-700 px-4 py-3 rounded-lg text-sm font-medium transition-colors">
-                  Crear Nuevo Usuario
-                </button>
-                <button className="bg-blue-50 hover:bg-blue-100 text-blue-700 px-4 py-3 rounded-lg text-sm font-medium transition-colors">
-                  Generar Reporte
-                </button>
-                <button className="bg-purple-50 hover:bg-purple-100 text-purple-700 px-4 py-3 rounded-lg text-sm font-medium transition-colors">
-                  Configurar Sistema
-                </button>
               </div>
             </div>
           </div>

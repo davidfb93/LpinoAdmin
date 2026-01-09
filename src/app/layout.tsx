@@ -3,8 +3,7 @@ import { Metadata, Viewport } from "next";
 
 import { Providers } from "./providers";
 import "@/styles/globals.css";
-
-
+import LayoutWithNavbar from "@/components/LayoutWithNavbar";
 
 export const metadata: Metadata = {
   title: "Lpino Admin",
@@ -28,13 +27,9 @@ export default function RootLayout({
       <head />
       <body>
         <Providers themeProps={{ attribute: "class", defaultTheme: "white" }}>
-          <div className="relative flex flex-col h-screen">
-            <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
-              {children}
-            </main>
-            <footer className="w-full flex items-center justify-center py-3">
-            </footer>
-          </div>
+          <LayoutWithNavbar>
+            {children}
+          </LayoutWithNavbar>
         </Providers>
       </body>
     </html>

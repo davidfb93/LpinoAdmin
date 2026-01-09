@@ -46,11 +46,9 @@ export default function AdminNavbar({ user }: AdminNavbarProps) {
 
   const menuItems = [
     { name: "Dashboard", href: "/" },
-    { name: "Miembros", href: "/users" },
-    { name: "Tienda", href: "/store" },
     { name: "Onboarding", href: "/onboarding" },
-    { name: "Reportes", href: "/reports" },
-    { name: "Configuración", href: "/settings" },
+    { name: "Miembros", href: "/members" },
+    { name: "Tienda", href: "/store" },
   ];
 
   const handleLogout = () => {
