@@ -1,9 +1,8 @@
 
 import { Metadata, Viewport } from "next";
-
 import { Providers } from "./providers";
 import "@/styles/globals.css";
-import LayoutWithNavbar from "@/components/LayoutWithNavbar";
+import NavbarClientWrapper from "@/components/NavbarClientWrapper";
 
 export const metadata: Metadata = {
   title: "Lpino Admin",
@@ -22,14 +21,17 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const pathname = typeof window !== "undefined" ? window.location.pathname : "";
+  // Si estamos en /login, solo renderiza los children (sin navbar)
+  const isLogin = pathname === "/login";
   return (
     <html suppressHydrationWarning lang="en">
       <head />
       <body>
         <Providers themeProps={{ attribute: "class", defaultTheme: "white" }}>
-          <LayoutWithNavbar>
+          <NavbarClientWrapper>
             {children}
-          </LayoutWithNavbar>
+          </NavbarClientWrapper>
         </Providers>
       </body>
     </html>
